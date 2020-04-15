@@ -37,7 +37,17 @@ const tasks = [
     return acc;
   }, {});
 
+  //Elements UI
+  const listContainer = document.querySelector('.tasks-list-section .list-group');
+
+  const form = document.forms['addTask'];
+  const iputTitle = form.elements['title'];
+  const iputBody = form.elements['body'];
+
+
+  //Events
   renderAllTasks(objOfTasks);
+  form.addEventListener('submit', onFormSubmitHandler);
 
 
   function renderAllTasks(tasksList) {
@@ -51,7 +61,9 @@ const tasks = [
 
     Object.values(tasksList).forEach(task => {
       const li = listItemTemplate(task);
+      fragment.appendChild(li);
     });
+    listContainer.appendChild(fragment);
 
   }
   
@@ -79,5 +91,43 @@ const tasks = [
     article.textContent = body;
     article.classList.add('mt-2', 'w-100');
 
+    li.appendChild(span);
+    li.appendChild(deleteBtn);
+    li.appendChild(article);
+
+    return li;
   }
+    // фу-я обработчик событий
+  function onFormSubmitHandler(e) {
+    e.preventDefault();
+    const titleValue = iputTitle.value;//получаем текущее значение из этого input
+    const bodyValue = iputBody.value;
+    
+    if (!titleValue || !bodyValue) {
+      alert('Пожалуйста введите tittle и body');
+      return;
+    }
+
+    const task = createNewTask(titleValue, bodyValue);
+    const listItem = listItemTemplate(task);
+    listContainer.insertAdjacentElement('afterbegin', listItem);
+    form.reset();
+
+  }
+
+  function createNewTask(title, body) {
+    const newTask = {
+      title,
+      body,
+      completed:false,
+      _id: Math.random(),
+    };
+    console.log(newTask);
+
+    objOfTasks[newTask._id] = newTask;//под новым id в объекте создали новую задачу
+
+    return{...newTask};
+    
+  }
+
 })(tasks);
