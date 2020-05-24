@@ -19,14 +19,23 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f88df730-9b07-4aeb-bc29-63d4295f881c" name="Default Changelist" comment="function deleteTask">
+    <list default="true" id="f88df730-9b07-4aeb-bc29-63d4295f881c" name="Default Changelist" comment="Основной функционал завершен">
+      <change afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,6 +50,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -100,7 +110,7 @@
       <workItem from="1589032974074" duration="82000" />
       <workItem from="1589033077257" duration="6957000" />
       <workItem from="1589053426429" duration="12000" />
-      <workItem from="1590315190940" duration="3538000" />
+      <workItem from="1590315190940" duration="4203000" />
     </task>
     <task id="LOCAL-00001" summary="Initional project">
       <created>1586780743712</created>
@@ -116,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589053163894</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Основной функционал завершен">
+      <created>1590320413937</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1590320413937</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,7 +154,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initional project" />
     <MESSAGE value="function deleteTask" />
-    <option name="LAST_COMMIT_MESSAGE" value="function deleteTask" />
+    <MESSAGE value="Основной функционал завершен" />
+    <option name="LAST_COMMIT_MESSAGE" value="Основной функционал завершен" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1890" height="275" key="GridCell.Tab.0.bottom" timestamp="1590315717821">
@@ -160,9 +178,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="339" y="63" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1589033985196" />
-    <state x="451" y="188" key="Vcs.Push.Dialog.v2" timestamp="1589053176322">
+    <state x="451" y="188" key="Vcs.Push.Dialog.v2" timestamp="1590320417580">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="451" y="188" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589053176322" />
+    <state x="451" y="188" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1590320417580" />
   </component>
 </project>
