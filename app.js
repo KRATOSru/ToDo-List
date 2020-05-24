@@ -139,12 +139,17 @@ const tasks = [
     return isConfirm;
   }
 
+  function deleteTaskFromHtml(confirmed, el) {
+    if (!confirmed) return;
+    el.remove();
+  }
+
   function onDeletehandler({ target }) {
     if (target.classList.contains('delete-btn')){
       const parent = target.closest('[data-task-id]');
       const id = parent.dataset.taskId;
       const  confirmed = deleteTask(id);
-      console.log(confirmed);
+      deleteTaskFromHtml(confirmed, parent);
     }
   }
 
